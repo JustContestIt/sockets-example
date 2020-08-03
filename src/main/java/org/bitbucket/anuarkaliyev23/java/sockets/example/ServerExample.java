@@ -23,7 +23,8 @@ public class ServerExample {
 
                     //Write something to client
                     PrintWriter writer = new PrintWriter(client.getOutputStream(), true);
-                    writer.println("Hello, from server. Time now is " + ZonedDateTime.now());
+                    System.out.println("Server example send question.");
+                    writer.println("Hello, from server. What's up?");
                 }
             }
         }
